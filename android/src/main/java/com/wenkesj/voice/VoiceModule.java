@@ -352,6 +352,7 @@ public class VoiceModule extends ReactContextBaseJavaModule implements Recogniti
         arr.pushString(result);
       }
     }
+
     WritableMap event = Arguments.createMap();
     event.putArray("value", arr);
     sendEvent("onSpeechResults", event);
